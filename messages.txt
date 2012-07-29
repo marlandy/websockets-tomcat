@@ -1,0 +1,27 @@
+// Mensaje se envía a un usuario cuando éste se conecta
+{
+    connectionInfo :
+    {
+        user : 'Miguel Arlandy',
+        activeUsers : ['Cristiano Ronaldo', 'Fernando Alonso', 'Rafael Nadal']
+    }
+}
+
+--------------------------------
+// información que se envía al resto de usuarios cuando un usuario se conecta o desconecta
+{
+    statusInfo : {
+        user : 'Cristiano Ronaldo',
+        status : 'CONNECTED' // valores CONNECTED o DISCONNECTED
+    }
+}
+
+----------------------------------
+// información de un mensage que se quiere enviar
+{
+    messageInfo : {
+        from : 'Miguel',
+        to : 'Cristiano Ronaldo',
+        message : 'Cristiano eres el mejor!!!'
+    }
+}

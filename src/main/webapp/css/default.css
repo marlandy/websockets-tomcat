@@ -1,0 +1,103 @@
+body {
+    font: 14px comic sans ms, sans-serif;
+    color: #333;
+}
+
+input {
+    border: 1px solid #AAA;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+button, textarea {
+    font-family: comic sans ms, sans-serif;
+}
+
+div#container {
+    width: 600px;
+}
+
+span#status {
+    padding: 0 0 0 20px;
+    display: block;
+}
+
+div#onLineUsersPanel {
+    visibility: hidden;
+    padding: 20px 0;
+}
+
+span.disconnected {
+    background: url('../img/disconnected.png') no-repeat left;
+}
+
+span.connected {
+    background: url('../img/connected.png') no-repeat left;
+}
+
+div#conversations {
+    width: 360px;
+    height: 530px;
+    font: 1.1em comic sans ms, sans-serif;
+    visibility: hidden;
+    float: right;
+}
+
+div#conversations div.conversation {
+    padding: 10px;
+}
+
+p.messages {
+    height: 350px;
+    overflow-y: auto;
+}
+
+p.messages div.message {
+    padding: 10px;
+    background-color: #F3F3F3;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+p.messages div.message span {
+    color: #999;
+}
+
+p.messages div.message p {
+    padding: 3px 0;
+    margin: 0;
+}
+
+div.conversation textarea {
+    width: 330px;
+    height: 60px;
+}
+
+span.onLineUserName {
+    font-weight: bold;
+    visibility: hidden;
+}
+
+ul#onlineUsers {
+    padding: 0;
+    margin: 5px 0;
+}
+
+ul#onlineUsers li a {
+    width: 190px;
+    cursor: pointer;
+    display: block;
+    padding: 3px;
+    background: #ddd;
+    color: #444;
+    margin: 2px 0;
+}
+
+ul#onlineUsers li a:hover {
+    color: #d27435;
+    background: #bbb;
+}
+
+div.leftPanel {
+    float: left;
+}

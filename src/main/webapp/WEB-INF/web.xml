@@ -1,0 +1,19 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Ejemplo de WebSockets con Tomcat 7</display-name>
+
+    <!--
+    <servlet>
+        <servlet-name>wsChat</servlet-name>
+        <servlet-class>com.autentia.tutorial.websockets.WebSocketCharServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>wsChat</servlet-name>
+        <url-pattern>/chat</url-pattern>
+    </servlet-mapping>
+    -->
+
+</web-app>
