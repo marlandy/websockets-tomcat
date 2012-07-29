@@ -5,6 +5,15 @@
 <web-app>
     <display-name>Ejemplo de WebSockets con Tomcat 7</display-name>
 
+
+    <servlet>
+        <servlet-name>simpleWS</servlet-name>
+        <servlet-class>com.autentia.tutorial.websockets.SimpleWebSocketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>simpleWS</servlet-name>
+        <url-pattern>/simple</url-pattern>
+    </servlet-mapping>
     <!--
     <servlet>
         <servlet-name>wsChat</servlet-name>
