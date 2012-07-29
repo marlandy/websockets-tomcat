@@ -159,7 +159,6 @@ var wsclient = (function() {
     function addMessage (from, message, conversationPanelId) {
         var messages = $('#' + conversationPanelId + ' .messages');
         $('<div class="message"><span><b>' + from + '</b> dice:</span><p>' + $('<p/>').text(message).html() + '</p></div>').appendTo(messages);
-        //messages.scrollTop(messages.height());
         messages.scrollTop(messages[0].scrollHeight);
         $('#'+conversationPanelId+' textarea').focus();
     }
