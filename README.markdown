@@ -12,8 +12,8 @@ Ejemplo de chat creado con WebSockets y Tomcat 7
 
 ## Instalación ##
 
-* Ejecutar el comando: *mvn clean install* en el directorio del proyecto (pom.xml)
-* Copiar el fichero *websockets.war* que se habrá creado en el directorio target/ del proyecto en el directorio *webapps/* de Tomcat 7
+* Ejecutar el comando: **mvn clean install** en el directorio del proyecto (pom.xml)
+* Copiar el fichero **websockets.war** que se habrá creado en el directorio target/ del proyecto en el directorio **webapps/** de Tomcat 7
 * Arrancar Apache Tomcat 7
-* Acceder con un *navegador con soporte de WebSockets* a http://localhost:8080/websockets/
+* Acceder con un **navegador con soporte de WebSockets** a http://localhost:8080/websockets/
 * Enjoy!
