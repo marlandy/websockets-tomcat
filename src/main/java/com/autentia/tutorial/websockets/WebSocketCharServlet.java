@@ -9,6 +9,8 @@ import org.apache.catalina.websocket.MessageInbound;
 import org.apache.catalina.websocket.StreamInbound;
 import org.apache.catalina.websocket.WebSocketServlet;
 import org.apache.catalina.websocket.WsOutbound;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,6 +21,8 @@ import java.util.*;
 
 @WebServlet(urlPatterns = "/chat")
 public class WebSocketCharServlet extends WebSocketServlet {
+
+    private static final Logger log = LoggerFactory.getLogger(WebSocketCharServlet.class);
 
     private static final Map<String, ChatConnection> connections = new HashMap<String, ChatConnection>();
 
@@ -74,7 +78,7 @@ public class WebSocketCharServlet extends WebSocketServlet {
                 final CharBuffer jsonMessage = CharBuffer.wrap(jsonProcessor.toJson(message));
                 destinationConnection.getWsOutbound().writeTextMessage(jsonMessage);
             } else {
-                // usuario no conectado
+                log.warn("Se está intentando enviar un mensaje a un usuario no conectado");
             }
         }
 
@@ -88,7 +92,7 @@ public class WebSocketCharServlet extends WebSocketServlet {
             try {
                 outbound.writeTextMessage(CharBuffer.wrap(jsonProcessor.toJson(connectionInfoMessage)));
             } catch (IOException e) {
-                e.printStackTrace();
+                log.error("No se pudo enviar el mensaje", e);
             }
         }
 
@@ -106,7 +110,7 @@ public class WebSocketCharServlet extends WebSocketServlet {
                 try {
                     connection.getWsOutbound().writeTextMessage(CharBuffer.wrap(jsonProcessor.toJson(message)));
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    log.error("No se pudo enviar el mensaje", e);
                 }
             }
         }

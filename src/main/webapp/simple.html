@@ -32,6 +32,10 @@
         ws.onclose = function () {
             addMessage('Desconectado!');
         };
+
+        ws.onerror = function (event) {
+            addMessage('Se produjo un error!');
+        };
     }
 
     function disconnect() {
