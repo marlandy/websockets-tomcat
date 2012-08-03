@@ -17,3 +17,6 @@ Ejemplo de chat creado con WebSockets y Tomcat 7
 * Arrancar Apache Tomcat 7
 * Acceder con un **navegador con soporte de WebSockets** a http://localhost:8080/websockets/
 * Enjoy!
+
+## Tutorial ##
+[WebSockets con Java y Tomcat 7](http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=WebSocketsJavaTomcat)
