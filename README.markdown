@@ -21,4 +21,4 @@ Ejemplo de chat creado con WebSockets y Tomcat 7
 ## Tutorial ##
 [WebSockets con Java y Tomcat 7](http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=WebSocketsJavaTomcat)
 
-![](http://www.adictosaltrabajo.com/tutoriales/WebSocketsJavaTomcat/WebSocketsTomcatConversacion.png)
+![](http://www.adictosaltrabajo.com/wp-content/uploads/tutorial-data/WebSocketsJavaTomcat/WebSocketsTomcatConversacion.png)
