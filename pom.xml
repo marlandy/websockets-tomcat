@@ -15,7 +15,7 @@
         <gson.version>2.2.2</gson.version>
         <junit.version>4.8.2</junit.version>
         <javax.servlet.version>3.0.1</javax.servlet.version>
-        <tomcat.version>7.0.29</tomcat.version>
+        <tomcat.version>7.0.81</tomcat.version>
     </properties>
 
     <build>
